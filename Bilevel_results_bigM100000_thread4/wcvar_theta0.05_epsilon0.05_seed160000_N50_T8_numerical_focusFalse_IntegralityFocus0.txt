@@ -1,0 +1,66 @@
+
+Gurobi 11.0.3 (linux64) logging started Tue Nov 26 14:44:45 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/Bilevel_results_bigM100000_thread4/wcvar_theta0.05_epsilon0.05_seed160000_N50_T8_numerical_focusFalse_IntegralityFocus0.txt"
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 5864 rows, 3050 columns and 15846 nonzeros
+Model fingerprint: 0xa5484059
+Model has 48 quadratic objective terms
+Variable types: 1703 continuous, 1347 integer (1347 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+05]
+  Objective range  [2e+00, 1e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-04, 1e+05]
+Presolve removed 2236 rows and 353 columns
+Presolve time: 0.16s
+Presolved: 3725 rows, 2746 columns, 12434 nonzeros
+Presolved model has 48 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1532 continuous, 1214 integer (1214 binary)
+
+Root relaxation: objective 1.737850e+02, 1732 iterations, 0.05 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  173.78504    0   58          -  173.78504      -     -    0s
+     0     0  173.78504    0  160          -  173.78504      -     -    0s
+     0     0  173.78504    0  140          -  173.78504      -     -    0s
+     0     0  173.77919    0   67          -  173.77919      -     -    1s
+     0     0  173.77919    0   67          -  173.77919      -     -    1s
+     0     0  173.77919    0   71          -  173.77919      -     -    1s
+     0     0  173.77919    0  169          -  173.77919      -     -    1s
+     0     0  173.77919    0  152          -  173.77919      -     -    1s
+     0     0  173.77919    0   78          -  173.77919      -     -    1s
+     0     0  155.81160    0   81          -  155.81160      -     -    2s
+     0     2  155.81160    0   64          -  155.81160      -     -    3s
+   188    73 infeasible    7               -  155.26850      -   212    5s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 16
+  Cover: 102
+  Implied bound: 251
+  MIR: 61
+  Flow cover: 446
+  Inf proof: 2
+  RLT: 14
+  Relax-and-lift: 38
+  PSD: 3
+
+Explored 502 nodes (172875 simplex iterations) in 8.82 seconds (7.84 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 0
+No other solutions better than -1e+100
+
+Model is infeasible or unbounded
+Best objective -, best bound -, gap -

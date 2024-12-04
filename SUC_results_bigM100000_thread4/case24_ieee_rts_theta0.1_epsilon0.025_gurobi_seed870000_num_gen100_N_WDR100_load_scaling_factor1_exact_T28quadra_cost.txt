@@ -1,0 +1,76 @@
+
+Gurobi 11.0.3 (linux64) logging started Sat Nov 23 03:43:23 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/SUC_results_bigM100000_thread4/case24_ieee_rts_theta0.1_epsilon0.025_gurobi_seed870000_num_gen100_N_WDR100_load_scaling_factor1_exact_T28quadra_cost.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 60783 rows, 34921 columns and 831994 nonzeros
+Model fingerprint: 0xb8d174c7
+Model has 2800 quadratic constraints
+Variable types: 32021 continuous, 2900 integer (2900 binary)
+Coefficient statistics:
+  Matrix range     [3e-04, 1e+05]
+  QMatrix range    [2e-03, 8e-03]
+  QLMatrix range   [3e-01, 6e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+05]
+Presolve removed 49185 rows and 15079 columns
+Presolve time: 0.32s
+Presolved: 11598 rows, 19842 columns, 74042 nonzeros
+Presolved model has 2800 quadratic constraint(s)
+Variable types: 16971 continuous, 2871 integer (2871 binary)
+
+Root relaxation: objective 3.988137e+04, 8949 iterations, 0.24 seconds (0.34 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 39881.3716    0    4          - 39881.3716      -     -    0s
+     0     0 301027.663    0  875          - 301027.663      -     -    1s
+     0     0 343288.947    0  868          - 343288.947      -     -    1s
+     0     0 690021.660    0  836          - 690021.660      -     -    1s
+     0     0 691179.770    0  659          - 691179.770      -     -    2s
+     0     0 691945.393    0  465          - 691945.393      -     -    2s
+     0     0 691962.335    0  465          - 691962.335      -     -    2s
+     0     0 692190.775    0  464          - 692190.775      -     -    2s
+     0     0 692192.812    0  464          - 692192.812      -     -    2s
+     0     0 692192.812    0  464          - 692192.812      -     -    2s
+     0     2 692251.251    0  464          - 692251.251      -     -    3s
+   336   369 693663.366   71  346          - 692445.733      -  46.4    5s
+H  803   677                    745608.12028 692445.733  7.13%  21.7    5s
+*  803   677             227    745608.12028 692445.733  7.13%  21.7    5s
+H 1026   214                    693845.47744 692445.733  0.20%  19.1    7s
+* 1026   214             250    693845.47744 692474.254  0.20%  19.2    7s
+  1051   206 692571.886   30  464 693845.477 692481.613  0.20%  20.7   10s
+  1066   216 693675.058   60  375 693845.477 692539.198  0.19%  20.4   19s
+  1067   220 692539.198   14  348 693845.477 692539.198  0.19%  37.4   20s
+  1240   292 692627.368   37  283 693845.477 692542.712  0.19%  52.9   25s
+H 2119   389                    693805.65069 692542.712  0.18%  47.1   28s
+* 2119   389             223    693805.65069 692542.712  0.18%  47.1   28s
+  2400   516 693369.903  152   77 693805.651 692569.281  0.18%  46.2   30s
+  3088  1133 692613.770   41  245 693805.651 692570.843  0.18%  58.1   35s
+H 3577  1420                    693804.77527 692571.713  0.18%  58.8   36s
+* 3577  1420             145    693804.77527 692571.713  0.18%  58.9   36s
+H 4407   439                    692653.05505 692583.471  0.01%  54.1   38s
+* 4407   439             197    692653.05505 692583.471  0.01%  54.1   38s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 18
+  MIR: 59
+  Mixing: 3
+  Flow cover: 25
+
+Explored 4421 nodes (266602 simplex iterations) in 39.81 seconds (45.93 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 5: 692653 693805 693806 ... 745608
+
+Optimal solution found (tolerance 1.00e-03)
+Warning: max constraint violation (5.6439e-08) exceeds tolerance
+Best objective 6.926530550497e+05, best bound 6.925834707687e+05, gap 0.0100%

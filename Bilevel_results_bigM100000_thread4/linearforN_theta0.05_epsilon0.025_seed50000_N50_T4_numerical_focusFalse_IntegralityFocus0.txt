@@ -1,0 +1,85 @@
+
+Gurobi 11.0.3 (linux64) logging started Wed Nov 27 01:36:30 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/Bilevel_results_bigM100000_thread4/linearforN_theta0.05_epsilon0.025_seed50000_N50_T4_numerical_focusFalse_IntegralityFocus0.txt"
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 3031 rows, 1587 columns and 8062 nonzeros
+Model fingerprint: 0x6d2ed711
+Model has 24 quadratic objective terms
+Variable types: 895 continuous, 692 integer (692 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+05]
+  Objective range  [2e+00, 1e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-04, 1e+05]
+Presolve removed 1155 rows and 173 columns
+Presolve time: 0.06s
+Presolved: 1925 rows, 1439 columns, 6294 nonzeros
+Presolved model has 24 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 812 continuous, 627 integer (627 binary)
+
+Root relaxation: objective 9.368908e+01, 930 iterations, 0.02 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   93.68908    0   26          -   93.68908      -     -    0s
+     0     0   93.68908    0   73          -   93.68908      -     -    0s
+     0     0   93.68908    0   72          -   93.68908      -     -    0s
+     0     0   90.02186    0   31          -   90.02186      -     -    0s
+     0     0   89.73449    0   32          -   89.73449      -     -    0s
+     0     0   89.73449    0   49          -   89.73449      -     -    0s
+     0     0   89.73449    0   69          -   89.73449      -     -    0s
+     0     0   89.73449    0   56          -   89.73449      -     -    0s
+     0     0   89.73449    0   54          -   89.73449      -     -    0s
+     0     0   89.73449    0   30          -   89.73449      -     -    0s
+     0     0   89.73449    0   29          -   89.73449      -     -    0s
+     0     0   89.73449    0   42          -   89.73449      -     -    0s
+     0     0   89.73449    0   27          -   89.73449      -     -    0s
+     0     0   89.73449    0   31          -   89.73449      -     -    1s
+     0     0   89.73449    0   31          -   89.73449      -     -    1s
+     0     2   89.73449    0   29          -   89.73449      -     -    1s
+  1471   424   83.78134    7   31          -   89.34666      -  64.0    5s
+  2188   642   85.91441   11   33          -   87.73036      -  68.1   10s
+  2218   663   85.61775   42  143          -   87.30992      -  79.9   15s
+  2246   681   85.51627   47  153          -   86.48304      -  78.9   20s
+H 2446   657                     -37.4334799   82.59255   321%  97.1   24s
+H 2453   626                       4.7529355   82.59255  1638%  97.0   24s
+H 2462   591                       5.8325777   82.59255  1316%  97.1   24s
+  2537   564   79.44144   38   30    5.83258   82.46181  1314%  98.4   25s
+H 2539   534                       6.0521370   82.46181  1263%  98.6   25s
+H 2590   498                       6.0942531   82.46181  1253%   101   25s
+  3011   306   39.92605   43   69    6.09425   67.71818  1011%   125   30s
+
+Cutting planes:
+  Gomory: 12
+  Cover: 90
+  Implied bound: 56
+  Projected implied bound: 5
+  Clique: 4
+  MIR: 135
+  Mixing: 1
+  StrongCG: 2
+  Flow cover: 396
+  Inf proof: 1
+  Zero half: 7
+  Network: 4
+  RLT: 37
+  Relax-and-lift: 39
+
+Explored 3119 nodes (406461 simplex iterations) in 30.73 seconds (19.26 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 5: 6.09425 6.05214 5.83258 ... -37.4335
+
+Optimal solution found (tolerance 1.00e-03)
+Warning: max constraint violation (1.0487e-09) exceeds tolerance
+Best objective 6.094253083873e+00, best bound 6.094253083873e+00, gap 0.0000%

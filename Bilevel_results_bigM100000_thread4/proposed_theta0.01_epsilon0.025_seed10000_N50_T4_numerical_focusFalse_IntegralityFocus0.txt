@@ -1,0 +1,87 @@
+
+Gurobi 11.0.3 (linux64) logging started Tue Nov 26 21:50:06 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/Bilevel_results_bigM100000_thread4/proposed_theta0.01_epsilon0.025_seed10000_N50_T4_numerical_focusFalse_IntegralityFocus0.txt"
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 1495 rows, 819 columns and 3046 nonzeros
+Model fingerprint: 0x2c9f7623
+Model has 24 quadratic objective terms
+Variable types: 511 continuous, 308 integer (308 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+05]
+  Objective range  [2e+00, 1e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+05]
+Presolve removed 912 rows and 312 columns
+Presolve time: 0.02s
+Presolved: 632 rows, 532 columns, 1733 nonzeros
+Presolved model has 24 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 337 continuous, 195 integer (195 binary)
+
+Root relaxation: objective 9.259995e+01, 754 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   92.59995    0   35          -   92.59995      -     -    0s
+     0     0   92.59995    0   65          -   92.59995      -     -    0s
+     0     0   92.59995    0   56          -   92.59995      -     -    0s
+     0     0   92.59995    0   70          -   92.59995      -     -    0s
+     0     0   77.62228    0   65          -   77.62228      -     -    0s
+     0     0   77.62228    0   73          -   77.62228      -     -    0s
+     0     0   77.27785    0   42          -   77.27785      -     -    0s
+     0     0   77.25791    0   56          -   77.25791      -     -    0s
+     0     0   77.25791    0   70          -   77.25791      -     -    0s
+     0     0   77.25791    0   80          -   77.25791      -     -    0s
+     0     0   76.67199    0   92          -   76.67199      -     -    0s
+     0     0   76.67199    0  105          -   76.67199      -     -    0s
+     0     0   76.67199    0  112          -   76.67199      -     -    0s
+     0     0   76.67199    0  112          -   76.67199      -     -    0s
+     0     0   76.67199    0  109          -   76.67199      -     -    0s
+     0     0   76.67199    0  119          -   76.67199      -     -    0s
+     0     0   76.67199    0  129          -   76.67199      -     -    0s
+     0     0   76.67199    0  123          -   76.67199      -     -    0s
+     0     0   63.45374    0   93          -   63.45374      -     -    0s
+H    0     0                       0.9454140   63.27640  6593%     -    0s
+     0     2   63.27640    0   81    0.94541   63.27640  6593%     -    0s
+H   31    20                       0.9642128   54.26407  5528%   131    0s
+H   33    20                       1.0609399   54.26407  5015%   126    0s
+H  111    42                       1.6272205   52.15725  3105%  98.8    0s
+H  161    56                       1.6279217   52.15725  3104%  93.9    0s
+H  359    91                       1.8053325   50.24827  2683%  84.5    1s
+H  378    91                       1.8053325   50.24827  2683%  82.4    1s
+*  662    95              30       1.8149859   32.21623  1675%  75.6    1s
+*  919    11              27       1.9155328    9.25495   383%  59.9    1s
+
+Cutting planes:
+  Learned: 11
+  Gomory: 5
+  Cover: 134
+  Implied bound: 301
+  Clique: 3
+  MIR: 46
+  Flow cover: 181
+  Inf proof: 12
+  Zero half: 1
+  Network: 2
+  RLT: 58
+  Relax-and-lift: 30
+  BQP: 1
+  PSD: 1
+
+Explored 947 nodes (61017 simplex iterations) in 1.52 seconds (1.00 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 9: 1.91553 1.81499 1.80533 ... 0.945414
+
+Optimal solution found (tolerance 1.00e-03)
+Warning: max constraint violation (1.7640e-09) exceeds tolerance
+Best objective 1.915532822688e+00, best bound 1.917266495325e+00, gap 0.0905%

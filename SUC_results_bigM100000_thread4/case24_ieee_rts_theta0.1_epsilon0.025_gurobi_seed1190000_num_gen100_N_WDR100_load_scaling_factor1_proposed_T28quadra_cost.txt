@@ -1,0 +1,76 @@
+
+Gurobi 11.0.3 (linux64) logging started Sat Nov 23 04:24:16 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/SUC_results_bigM100000_thread4/case24_ieee_rts_theta0.1_epsilon0.025_gurobi_seed1190000_num_gen100_N_WDR100_load_scaling_factor1_proposed_T28quadra_cost.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 60682 rows, 34821 columns and 827226 nonzeros
+Model fingerprint: 0xeb4c01e6
+Model has 2800 quadratic constraints
+Variable types: 32021 continuous, 2800 integer (2800 binary)
+Coefficient statistics:
+  Matrix range     [3e-04, 2e+03]
+  QMatrix range    [2e-03, 8e-03]
+  QLMatrix range   [6e-01, 6e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+03]
+Presolve removed 49154 rows and 15037 columns
+Presolve time: 0.30s
+Presolved: 11528 rows, 19784 columns, 72612 nonzeros
+Presolved model has 2800 quadratic constraint(s)
+Variable types: 16984 continuous, 2800 integer (2800 binary)
+
+Root relaxation: objective 4.562633e+04, 8996 iterations, 0.24 seconds (0.34 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 45626.3337    0   28          - 45626.3337      -     -    0s
+     0     0 400350.451    0  699          - 400350.451      -     -    1s
+     0     0 480111.760    0  728          - 480111.760      -     -    1s
+     0     0 762959.715    0  733          - 762959.715      -     -    1s
+     0     0 763033.695    0  494          - 763033.695      -     -    1s
+     0     0 763281.697    0  312          - 763281.697      -     -    2s
+     0     0 763287.733    0  312          - 763287.733      -     -    2s
+     0     0 763288.755    0  312          - 763288.755      -     -    2s
+     0     2 763288.755    0  312          - 763288.755      -     -    3s
+    68    92 763346.059   13  291          - 763298.940      -  69.2    5s
+H  411   325                    764606.30121 763299.017  0.17%  49.2    8s
+*  411   325             125    764606.30121 763299.017  0.17%  49.2    8s
+   558   341 763486.032   27  185 764606.301 763299.017  0.17%  49.1   10s
+   601   344 763528.537   15  394 764606.301 763299.017  0.17%  51.4   15s
+   615   353 763367.903    9  394 764606.301 763301.516  0.17%  50.3   20s
+   755   455 763772.461   27  363 764606.301 763323.898  0.17%  94.4   25s
+  1175   656 763771.628   30  275 764606.301 763328.679  0.17%   116   30s
+H 1980   743                    764422.97759 763334.756  0.14%  94.0   33s
+* 1980   743             178    764422.97759 763334.756  0.14%  94.0   33s
+H 2320   884                    764397.58799 763345.471  0.14%  88.9   34s
+* 2320   884              33    764397.58799 763345.471  0.14%  89.0   34s
+  2354   980 763848.499   35  296 764397.588 763345.471  0.14%  88.4   35s
+H 2675  1039                    764334.19554 763348.808  0.13%  88.7   36s
+* 2675  1039              71    764334.19554 763348.808  0.13%  88.7   36s
+H 3211  1268                    764186.41137 763355.057  0.11%  82.2   38s
+* 3211  1268             109    764186.41137 763355.057  0.11%  82.2   38s
+H 3616  1086                    764033.55117 763360.596  0.09%  77.9   39s
+* 3616  1086              76    764033.55117 763360.596  0.09%  77.9   39s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 5
+  MIR: 84
+  Flow cover: 10
+  RLT: 1
+
+Explored 3736 nodes (317008 simplex iterations) in 40.53 seconds (58.76 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 7: 764034 764034 764186 ... 764606
+
+Optimal solution found (tolerance 1.00e-03)
+Warning: max constraint violation (2.2269e-07) exceeds tolerance
+Best objective 7.640335511692e+05, best bound 7.633609885688e+05, gap 0.0880%

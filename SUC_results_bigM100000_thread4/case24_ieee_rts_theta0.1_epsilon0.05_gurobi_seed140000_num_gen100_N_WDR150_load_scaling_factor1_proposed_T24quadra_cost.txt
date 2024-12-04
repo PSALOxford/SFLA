@@ -1,0 +1,64 @@
+
+Gurobi 11.0.3 (linux64) logging started Sat Nov 23 12:46:34 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/SUC_results_bigM100000_thread4/case24_ieee_rts_theta0.1_epsilon0.05_gurobi_seed140000_num_gen100_N_WDR150_load_scaling_factor1_proposed_T24quadra_cost.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 61352 rows, 29911 columns and 1720734 nonzeros
+Model fingerprint: 0x7a79938e
+Model has 2400 quadratic constraints
+Variable types: 27511 continuous, 2400 integer (2400 binary)
+Coefficient statistics:
+  Matrix range     [3e-04, 2e+03]
+  QMatrix range    [2e-03, 8e-03]
+  QLMatrix range   [8e-02, 6e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+03]
+Presolve removed 50571 rows and 12673 columns
+Presolve time: 0.50s
+Presolved: 10781 rows, 17238 columns, 65013 nonzeros
+Presolved model has 2400 quadratic constraint(s)
+Variable types: 14838 continuous, 2400 integer (2400 binary)
+
+Root relaxation: objective 3.977813e+04, 8734 iterations, 0.22 seconds (0.31 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    685016.93445 39778.1350  94.2%     -    1s
+*    0     0               0    685016.93445 39778.1350  94.2%     -    1s
+     0     0 414385.477    0  641 685016.934 414385.477  39.5%     -    1s
+     0     0 650330.327    0  248 685016.934 650330.327  5.06%     -    1s
+     0     0 650500.575    0   71 685016.934 650500.575  5.04%     -    2s
+     0     0 650500.575    0   69 685016.934 650500.575  5.04%     -    2s
+     0     0 650501.884    0   69 685016.934 650501.884  5.04%     -    2s
+     0     0 650501.884    0   69 685016.934 650501.884  5.04%     -    3s
+     0     0 650502.016    0   69 685016.934 650502.016  5.04%     -    3s
+     0     2 650502.016    0   69 685016.934 650502.016  5.04%     -    4s
+    27    33 650615.893    6   57 685016.934 650505.011  5.04%  71.7    5s
+   167   177 650606.035    4   71 685016.934 650522.570  5.04%  69.9   10s
+H  176   177                    650994.60274 650522.570  0.07%  67.9   10s
+*  176   177              29    650994.60274 650522.570  0.07%  68.2   10s
+
+Cutting planes:
+  Gomory: 46
+  Lift-and-project: 9
+  Implied bound: 248
+  MIR: 24
+  Flow cover: 144
+  RLT: 319
+  Relax-and-lift: 92
+
+Explored 205 nodes (35969 simplex iterations) in 11.49 seconds (13.96 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 3: 650995 650995 685017 
+
+Optimal solution found (tolerance 1.00e-03)
+Warning: max constraint violation (1.7426e-07) exceeds tolerance
+Best objective 6.509946027450e+05, best bound 6.505225695738e+05, gap 0.0725%

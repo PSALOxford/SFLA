@@ -1,0 +1,78 @@
+
+Gurobi 11.0.3 (linux64) logging started Mon Nov 25 04:38:50 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/SUC_results_bigM100000_thread4/case24_ieee_rts_theta0.1_epsilon0.025_gurobi_seed1370000_num_gen100_N_WDR100_load_scaling_factor1_proposed_T28quadra_cost.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 60682 rows, 34821 columns and 827226 nonzeros
+Model fingerprint: 0x70f367f3
+Model has 2800 quadratic constraints
+Variable types: 32021 continuous, 2800 integer (2800 binary)
+Coefficient statistics:
+  Matrix range     [3e-04, 2e+03]
+  QMatrix range    [2e-03, 8e-03]
+  QLMatrix range   [7e-03, 6e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+03]
+Presolve removed 49184 rows and 15046 columns
+Presolve time: 0.32s
+Presolved: 11498 rows, 19775 columns, 71296 nonzeros
+Presolved model has 2800 quadratic constraint(s)
+Variable types: 16975 continuous, 2800 integer (2800 binary)
+
+Root relaxation: objective 4.327730e+04, 9093 iterations, 0.25 seconds (0.33 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                    715087.80282 43277.3002  93.9%     -    0s
+*    0     0               0    715087.80282 43277.3002  93.9%     -    0s
+     0     0 336784.085    0  945 715087.803 336784.085  52.9%     -    1s
+     0     0 661106.029    0  583 715087.803 661106.029  7.55%     -    1s
+     0     0 661198.113    0   67 715087.803 661198.113  7.54%     -    2s
+     0     0 661353.934    0   58 715087.803 661353.934  7.51%     -    2s
+     0     0 661362.233    0   58 715087.803 661362.233  7.51%     -    2s
+     0     0 661362.233    0   57 715087.803 661362.233  7.51%     -    2s
+     0     0 661362.233    0   57 715087.803 661362.233  7.51%     -    2s
+     0     2 661362.233    0   57 715087.803 661362.233  7.51%     -    3s
+    58    73 661492.696   14   40 715087.803 661383.628  7.51%  53.2    5s
+   505   501 662032.478  110    5 715087.803 661383.628  7.51%  33.7   10s
+H  544   492                    662839.61397 661411.982  0.22%  33.2   11s
+*  544   492             143    662839.61397 661411.982  0.22%  33.2   11s
+   827   510 661459.323   19   57 662839.614 661411.982  0.22%  34.8   15s
+   844   521 661459.323   19   99 662839.614 661411.982  0.22%  34.1   20s
+   887   555 661491.450   19   34 662839.614 661422.469  0.21%  56.7   25s
+H 1217   734                    662317.28372 661422.469  0.14%  63.2   29s
+* 1217   734              65    662317.28372 661422.469  0.14%  63.4   29s
+  1272   738 662314.110   74    - 662317.284 661422.469  0.14%  63.4   30s
+H 1401   744                    662284.84730 661426.315  0.13%  65.8   32s
+* 1401   744              87    662284.84730 661426.315  0.13%  65.8   32s
+  1736   933 662197.933   71   16 662284.847 661426.372  0.13%  71.2   35s
+H 2595  1338                    662224.54052 661457.584  0.12%  67.0   39s
+* 2595  1338              79    662224.54052 661457.584  0.12%  67.0   39s
+  2746  1473 661571.266   36   32 662224.541 661457.584  0.12%  66.8   40s
+H 3025  1312                    662085.97048 661457.584  0.09%  67.2   42s
+* 3025  1312              90    662085.97048 661457.584  0.09%  67.2   42s
+
+Cutting planes:
+  Gomory: 11
+  Lift-and-project: 2
+  Cover: 3
+  Implied bound: 26
+  MIR: 86
+  Flow cover: 33
+  RLT: 67
+
+Explored 3193 nodes (240093 simplex iterations) in 44.15 seconds (50.08 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 7: 662086 662086 662225 ... 715088
+
+Optimal solution found (tolerance 1.00e-03)
+Warning: max constraint violation (1.3185e-07) exceeds tolerance
+Best objective 6.620859704823e+05, best bound 6.614575841717e+05, gap 0.0949%

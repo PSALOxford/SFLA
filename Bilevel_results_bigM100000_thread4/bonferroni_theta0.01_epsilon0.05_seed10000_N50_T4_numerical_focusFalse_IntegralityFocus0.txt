@@ -1,0 +1,57 @@
+
+Gurobi 11.0.3 (linux64) logging started Tue Nov 26 06:35:28 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/Bilevel_results_bigM100000_thread4/bonferroni_theta0.01_epsilon0.05_seed10000_N50_T4_numerical_focusFalse_IntegralityFocus0.txt"
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 1204 rows, 648 columns and 2404 nonzeros
+Model fingerprint: 0xd5458994
+Model has 24 quadratic objective terms
+Variable types: 400 continuous, 248 integer (248 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+05]
+  Objective range  [2e+00, 1e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+05]
+Presolve removed 1065 rows and 534 columns
+Presolve time: 0.01s
+Presolved: 160 rows, 125 columns, 464 nonzeros
+Presolved model has 10 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 85 continuous, 40 integer (40 binary)
+Found heuristic solution: objective 0.8638060
+
+Root relaxation: objective 3.419385e+00, 106 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.41938    0    7    0.86381    3.41938   296%     -    0s
+H    0     0                       1.0648999    3.41938   221%     -    0s
+     0     0    3.29622    0    7    1.06490    3.29622   210%     -    0s
+H    0     0                       2.6784073    3.23818  20.9%     -    0s
+     0     0    3.23818    0    6    2.67841    3.23818  20.9%     -    0s
+     0     0    3.18949    0    9    2.67841    3.18949  19.1%     -    0s
+*    0     0               0       3.1840962    3.18410  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 2
+  MIR: 6
+  Flow cover: 2
+  RLT: 2
+  Relax-and-lift: 2
+
+Explored 1 nodes (141 simplex iterations) in 0.02 seconds (0.01 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 4: 3.1841 2.67841 1.0649 0.863806 
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 3.184096159622e+00, best bound 3.184096159646e+00, gap 0.0000%

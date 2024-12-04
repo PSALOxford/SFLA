@@ -1,0 +1,77 @@
+
+Gurobi 11.0.3 (linux64) logging started Sun Nov 24 12:05:25 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/SUC_results_bigM100000_thread4/case24_ieee_rts_theta0.1_epsilon0.025_gurobi_seed1270000_num_gen100_N_WDR50_load_scaling_factor1_exact_T24quadra_cost.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 50071 rows, 29861 columns and 508398 nonzeros
+Model fingerprint: 0xab437f85
+Model has 2400 quadratic constraints
+Variable types: 27411 continuous, 2450 integer (2450 binary)
+Coefficient statistics:
+  Matrix range     [3e-04, 1e+05]
+  QMatrix range    [2e-03, 8e-03]
+  QLMatrix range   [4e-01, 6e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+05]
+Presolve removed 40346 rows and 12952 columns
+Presolve time: 0.20s
+Presolved: 9725 rows, 16909 columns, 52649 nonzeros
+Presolved model has 2400 quadratic constraint(s)
+Variable types: 14477 continuous, 2432 integer (2432 binary)
+
+Root relaxation: objective 3.547494e+04, 7364 iterations, 0.17 seconds (0.25 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 35474.9368    0    2          - 35474.9368      -     -    0s
+     0     0 338653.139    0  772          - 338653.139      -     -    0s
+     0     0 364306.669    0  727          - 364306.669      -     -    1s
+     0     0 627835.925    0  695          - 627835.925      -     -    1s
+     0     0 627868.146    0  440          - 627868.146      -     -    1s
+     0     0 628099.203    0  410          - 628099.203      -     -    1s
+     0     0 628101.811    0  410          - 628101.811      -     -    1s
+     0     0 628157.874    0  410          - 628157.874      -     -    1s
+     0     0 628159.672    0  410          - 628159.672      -     -    1s
+     0     2 628175.048    0  410          - 628175.048      -     -    2s
+H  796   576                    630200.74388 628175.048  0.32%  24.5    4s
+*  796   576             201    630200.74388 628175.048  0.32%  24.5    4s
+   914   538 630173.540  151  410 630200.744 628217.155  0.31%  24.0    7s
+   925   545 630171.212   83  433 630200.744 628471.688  0.27%  23.7   10s
+   941   557 628553.415   10  463 630200.744 628471.688  0.27%  38.9   15s
+   989   599 628646.416   29  416 630200.744 628505.899  0.27%  58.5   20s
+  1206   788 628779.009   54  338 630200.744 628506.002  0.27%  77.9   25s
+  1943  1008 628883.161   34  389 630200.744 628508.615  0.27%  83.9   30s
+  3002  1428     cutoff  129      630200.744 628511.381  0.27%  66.9   35s
+H 3341  1278                    629451.27307 628511.381  0.15%  63.5   36s
+* 3341  1278             217    629451.27307 628511.381  0.15%  63.5   36s
+  4222  1692 628992.221   40  302 629451.273 628544.855  0.14%  60.5   40s
+H 4308  1115                    629206.45141 628544.855  0.11%  59.9   40s
+* 4308  1115             123    629206.45141 628544.855  0.11%  59.9   40s
+H 4450  1242                    629181.27693 628547.023  0.10%  60.0   41s
+* 4450  1242              77    629181.27693 628547.023  0.10%  60.0   41s
+H 4742  1215                    629143.99744 628547.668  0.09%  58.8   41s
+* 4742  1215             132    629143.99744 628547.668  0.09%  58.8   41s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 1
+  Implied bound: 2
+  MIR: 61
+  Flow cover: 6
+  RLT: 1
+
+Explored 4746 nodes (300713 simplex iterations) in 42.62 seconds (48.31 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 6: 629144 629144 629181 ... 630201
+
+Optimal solution found (tolerance 1.00e-03)
+Warning: max constraint violation (1.2647e-09) exceeds tolerance
+Best objective 6.291439910134e+05, best bound 6.285476678924e+05, gap 0.0948%

@@ -1,0 +1,76 @@
+
+Gurobi 11.0.3 (linux64) logging started Fri Nov 22 08:52:59 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/SUC_results_bigM100000_thread4/case24_ieee_rts_theta0.1_epsilon0.05_gurobi_seed400000_num_gen100_N_WDR100_load_scaling_factor1_exact_T24quadra_cost.txt"
+Set parameter TimeLimit to value 3600
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 57659 rows, 29961 columns and 1325658 nonzeros
+Model fingerprint: 0x934bbf1d
+Model has 2400 quadratic constraints
+Variable types: 27461 continuous, 2500 integer (2500 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 1e+05]
+  QMatrix range    [2e-03, 8e-03]
+  QLMatrix range   [9e-02, 6e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+05]
+Presolve removed 47103 rows and 12693 columns
+Presolve time: 0.37s
+Presolved: 10556 rows, 17268 columns, 59399 nonzeros
+Presolved model has 2400 quadratic constraint(s)
+Variable types: 14774 continuous, 2494 integer (2494 binary)
+
+Root relaxation: objective 2.902892e+04, 8255 iterations, 0.24 seconds (0.35 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 29028.9229    0    8          - 29028.9229      -     -    0s
+     0     0 291976.342    0  782          - 291976.342      -     -    1s
+     0     0 297703.936    0  777          - 297703.936      -     -    1s
+     0     0 585865.799    0  812          - 585865.799      -     -    1s
+     0     0 586427.800    0  671          - 586427.800      -     -    1s
+     0     0 587272.745    0  587          - 587272.745      -     -    2s
+     0     0 587681.358    0  596          - 587681.358      -     -    2s
+     0     0 587898.205    0  589          - 587898.205      -     -    2s
+     0     0 587913.198    0  589          - 587913.198      -     -    2s
+     0     2 587922.219    0  589          - 587922.219      -     -    2s
+   882   918 589944.543  227    -          - 588743.957      -  23.3    5s
+H  982   529                    590460.50454 588743.957  0.29%  21.3    5s
+*  982   529             250    590460.50454 588743.957  0.29%  21.3    5s
+  1074   458 589072.741    8  409 590460.505 589003.354  0.25%  22.0   10s
+  1089   468 589988.301  103  379 590460.505 589051.354  0.24%  21.7   17s
+  1172   546 589172.502   28  300 590460.505 589064.538  0.24%  44.9   20s
+  1457   730     cutoff   67      590460.505 589064.538  0.24%  78.0   25s
+  2261   866 590080.082  196   11 590460.505 589072.958  0.23%  76.1   30s
+  3405  1868 589093.275   30  322 590460.505 589073.513  0.23%  63.9   35s
+  5240  3699 589644.015  160    2 590460.505 589086.874  0.23%  55.8   40s
+  7326  5790 589731.782  156    2 590460.505 589092.063  0.23%  50.1   45s
+  9193  7494 589438.006  145    - 590460.505 589096.165  0.23%  46.2   50s
+ 11269  9370 589327.779  125    - 590460.505 589098.451  0.23%  43.4   55s
+ 13295 10931 590275.783  151    - 590460.505 589101.761  0.23%  42.0   60s
+ 13884 11385 590436.686   43  210 590460.505 589102.676  0.23%  41.8   70s
+ 14933 12419 589215.378   55  144 590460.505 589103.357  0.23%  41.2   75s
+H16036  6169                    589530.55990 589104.622  0.07%  40.8   78s
+*16036  6169             137    589530.55990 589104.622  0.07%  40.8   78s
+
+Cutting planes:
+  Gomory: 13
+  Implied bound: 81
+  MIR: 117
+  Mixing: 4
+  Flow cover: 108
+
+Explored 16296 nodes (687930 simplex iterations) in 79.13 seconds (95.24 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 3: 589531 589531 590461 
+
+Optimal solution found (tolerance 1.00e-03)
+Warning: max constraint violation (2.9805e-06) exceeds tolerance
+Best objective 5.895305598946e+05, best bound 5.891047422388e+05, gap 0.0722%

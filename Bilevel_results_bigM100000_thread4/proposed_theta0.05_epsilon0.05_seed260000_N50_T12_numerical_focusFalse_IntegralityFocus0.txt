@@ -1,0 +1,88 @@
+
+Gurobi 11.0.3 (linux64) logging started Tue Nov 26 16:31:46 2024
+
+Set parameter LogFile to value "/home/yihong/Coding/OR_SUC/Bilevel_results_bigM100000_thread4/proposed_theta0.05_epsilon0.05_seed260000_N50_T12_numerical_focusFalse_IntegralityFocus0.txt"
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.6 LTS")
+
+CPU model: AMD EPYC 7532 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 64 physical cores, 128 logical processors, using up to 4 threads
+
+Optimize a model with 4063 rows, 2195 columns and 8806 nonzeros
+Model fingerprint: 0x8215a902
+Model has 72 quadratic objective terms
+Variable types: 1351 continuous, 844 integer (844 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+05]
+  Objective range  [2e+00, 1e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+05]
+Presolve removed 2239 rows and 633 columns
+Presolve time: 0.05s
+Presolved: 1969 rows, 1635 columns, 5839 nonzeros
+Presolved model has 72 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1029 continuous, 606 integer (606 binary)
+
+Root relaxation: objective 2.224708e+02, 1517 iterations, 0.03 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  222.47079    0   96          -  222.47079      -     -    0s
+     0     0  222.47079    0  183          -  222.47079      -     -    0s
+     0     0  222.47079    0  180          -  222.47079      -     -    0s
+     0     0  222.47079    0  137          -  222.47079      -     -    0s
+     0     0  222.47079    0  126          -  222.47079      -     -    0s
+     0     0  222.47079    0  128          -  222.47079      -     -    0s
+     0     0  222.47079    0  118          -  222.47079      -     -    0s
+     0     0  205.02484    0  132          -  205.02484      -     -    0s
+     0     2  204.98937    0  113          -  204.98937      -     -    1s
+  1535   788  140.64577   16  118          -  140.64577      -   126    5s
+  1547   796  137.39353   12  252          -  137.39353      -   125   10s
+H 1557   761                       2.8952428  137.35895  4644%   124   19s
+H 1557   722                       3.0059289  137.35895  4470%   124   19s
+H 1558   689                       3.0707777  137.35895  4373%   163   19s
+  1569   689 infeasible   13         3.07078  136.79961  4355%   166   20s
+H 1618   671                       3.0981368  133.61157  4213%   178   21s
+H 1621   637                       3.2779382  133.61157  3976%   179   21s
+H 1652   582                       3.7108244  133.61157  3501%   197   22s
+H 1684   570                       4.0276323  133.61157  3217%   204   22s
+H 1803   558                       4.1512665  133.37545  3113%   220   24s
+  1820   557 infeasible   41         4.15127  133.37545  3113%   223   25s
+H 1822   529                       4.9110473  133.37545  2616%   223   25s
+* 1827   502              45       4.9110474  133.37545  2616%   223   25s
+  2095   455  131.77997   26  132    4.91105  132.65944  2601%   276   30s
+* 2131   434              40       4.9949528  132.65944  2556%   282   30s
+H 2248   385                       4.9949528  132.58208  2554%   293   31s
+H 2413   327                       5.0320080  132.28071  2529%   306   33s
+  2461   325 infeasible   20         5.03201  132.28071  2529%   312   35s
+  2792   230   83.25454   28  137    5.03201  131.29401  2509%   348   40s
+  3114   116 infeasible   29         5.03201  129.12415  2466%   388   45s
+
+Cutting planes:
+  Learned: 11
+  Gomory: 12
+  Cover: 34
+  Implied bound: 75
+  Projected implied bound: 4
+  Clique: 4
+  MIR: 43
+  StrongCG: 1
+  Flow cover: 195
+  Flow path: 1
+  Zero half: 2
+  RLT: 38
+  Relax-and-lift: 34
+  BQP: 1
+  PSD: 3
+
+Explored 4340 nodes (1355880 simplex iterations) in 47.83 seconds (41.50 work units)
+Thread count was 4 (of 128 available processors)
+
+Solution count 10: 5.03201 4.99495 4.99495 ... 3.09814
+
+Optimal solution found (tolerance 1.00e-03)
+Best objective 5.032007964193e+00, best bound 5.032007964193e+00, gap 0.0000%

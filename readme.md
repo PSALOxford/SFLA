@@ -6,7 +6,7 @@ to Joint Chance Constraints with Wasserstein Ambiguity".
 ## File Description
 It contains the following files and folders:
 ### Part 0: Supplementary Mathematical Formulations
-- `supp_formulations.pdf`: This document provides the detailed formulations of the chance-constrained UC and bilevel problems examined in the numerical case studies of the paper ``Strengthened and Faster Linear Approximation to Joint Chance Constraints with Wasserstein Ambiguity''.
+- [supp_formulations.pdf](./supp_formulations.pdf): This PDF document provides the detailed mathematical formulations of the chance-constrained UC and bilevel problems examined in the numerical case studies of our paper ``Strengthened and Faster Linear Approximation to Joint Chance Constraints with Wasserstein Ambiguity''.
 ### Part I: Packages and Installation
 - `requirements.txt`: The required packages for the code.
 - `command_env_creation.txt`: The command for creating the conda environment.

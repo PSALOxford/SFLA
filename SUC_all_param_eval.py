@@ -181,13 +181,13 @@ def run_all_param():
     n_jobs = 16 # higher than 20 would cause memory issues
     # ---------------------------------------------------------------------------------
     T_list = [24]  # the number of time steps
-    theta_list = [5e-1]  # the Wasserstein radius. Bonferroni approximation requires small theta for feasibility
+    theta_list = [5e-1, 1e-1]  # the Wasserstein radius. Bonferroni approximation requires small theta for feasibility
     epsilon_list = [0.05, 0.025]  # [0.05, 0.025] the risk level
-    gurobi_seed_list = [i for i in range(10000*0, 10000*30, 10000)]
+    gurobi_seed_list = [i for i in range(10000*0, 10000*150, 10000)]
     num_gen_list = [100]  # the number of thermal generators
-    N_WDR_list = [50]  # the number of scenarios for the WDRJCC
+    N_WDR_list = [50, 100, 150]  # the number of scenarios for the WDRJCC
     load_scaling_factor_list = [1]  # [1] the scaling factor for the load
-    method_list = ['ori', 'wcvar', 'bonferroni']  # proposed, ori, exact, wcvar, bonferroni. the method to reformulate the WDRJCC
+    method_list = ['proposed', 'exact']  # proposed, ori, exact, wcvar, bonferroni. the method to reformulate the WDRJCC
     network_name_list = ['case24_ieee_rts']
     quadra_cost = True
 

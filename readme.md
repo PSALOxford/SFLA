@@ -17,8 +17,15 @@ It contains the following files and folders:
 - `SUC.py`: The code for solving chance-constrained unit commitment problem. This code sets up the corresponding optimization problem for each benchmark methods of RHS-WDRJCC.
 It can also be used for testing a specific parameter setting.
 - `SUC_all_param_eval.py`: This code is used for evaluating all parameter settings for all methods as done in our paper. Joblib is used for parallel computing. Be aware about your available CPU cores when specifying the njobs.
+  
+In the SUC code scripts, 'proposed' represents the proposed SFLA, 'ori' represents the LA benchmark in our paper, and 'exact' stands for ExactS.
 - `Bilevel_Storage.py`: This is similar to `SUC.py`, but for the bilevel strategic bidding problem.
 - `Bilevel_Storage_all_param_eval.py`: This is similar to `SUC_all_param_eval.py`, but for the bilevel strategic bidding problem.
+
+In the Bilevel code scripts, 'proposed' represents the proposed SFLA, and 'linearforN' represents the LA benchmark in our paper.
+
+**Note that, the two code scripts** `SUC_all_param_eval.py` **and** `Bilevel_Storage_all_param_eval.py` **run n_jobs (16 for SUC or 30 for Bilevel) parameter settings in parallel, with each job (solver) uses 4 CPU threads. You should adjust n_jobs based on the number of CPU threads and memory (RAM) available on your own machine!**
+
 ### Part IV: Results
 - `SUC_results_bigM100000_thread4/`: The folder containing the results of the chance-constrained unit commitment problem with big-M=100000 and 4 threads per optimization problem.
 - `Bilevel_results_bigM100000_thread4/`: Similar to `SUC_results_bigM100000_thread4/`, but for the bilevel strategic bidding problem.

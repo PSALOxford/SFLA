@@ -1,7 +1,7 @@
 # Strengthened and Faster Linear Approximation
 
 This repository contains codes for our paper "Strengthened and Faster Linear Approximation
-to Joint Chance Constraints with Wasserstein Ambiguity".
+to Joint Chance Constraints with Wasserstein Ambiguity", published at INFORMS Journal on Computing [(link)](https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2024.1073).
 
 ## File Description
 It contains the following files and folders:
@@ -37,4 +37,4 @@ In the Bilevel code scripts, 'proposed' represents the proposed SFLA, and 'linea
 - `Compare_SFLA_LA.py`: This code verifies that the proposed SFLA can be a proper superset of (strictly dominant) LA for general settings of $\mathbf{\kappa}$.
 ---
 If you find this repository helpful, please cite our paper:
-> Yihong Zhou, Yuxin Xia, Hanbin Yang, Thomas Morstyn (2024). Strengthened and Faster Linear Approximation to Joint Chance Constraints with Wasserstein Ambiguity. to be released.
+> Yihong Zhou, Yuxin Xia, Hanbin Yang, Thomas Morstyn (2026). Strengthened and Faster Linear Approximation to Joint Chance Constraints with Wasserstein Ambiguity. INFORMS Journal on Computing.
